@@ -4,6 +4,7 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -13,8 +14,29 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
   width: 200px;
   margin: 50px auto;
+}
+
+.containerState {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 1.5rem;
+
+  button {
+    cursor: pointer;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px 15px;
+    color: #333;
+  }
 }
 
 .row {
